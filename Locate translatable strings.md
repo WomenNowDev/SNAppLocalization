@@ -33,19 +33,25 @@ Here's the approach we took to make this System Property work for us:
 2. Switch your language preference to the target language.
 3. Literally click through everything in your instance, especially focusing on what you know is customized like Scoped Applications. This means every List, Form and all its sections including choice dropdowns, Module in the Filter Navigator, Service Portal, Knowledge Base and Articles, Guided Tours, etc.
 
+Note: it seems like this property will only create the stub translation records for strings on the Translated Name / Field table.
+
 **It's important to click and open as many records as you can since this System Property will only generate the missing translation record if the form/record you clicked on has been opened at least once!**
 
 ### Example
 
-Here's a custom choice list on a custom table in a Scoped Application:
+Here is a button with text "Retry Event". Because of its prefix `TRF`, we know that this is a Translated Name / Field.
 
-![CHC record example](/images/translate-learn-chc.PNG)
+![Translate and Learn example button with text Retry Event](/images/translate-learn-example.png)
 
-Here are the corresponding Choice records for these options:
+Before we enable the property, notice how there is no translation record for this string:
 
-![CHC en records](/images/translate-learn-chc-records.png)
+![Translate and Learn before stub record](/images/translate-learn-trf-before.png)
 
-Currently, only the English version of these choices exist on the Choice table. Once we enable the property, switch the language preference to the target language and revisit the choice list on the form again, we should expect that three new Choice records are created for this field.
+Once we enable the property and revisit the form this button is on, we see that a stub translation record has been made for us!
+
+![Translate and Learn after stub record](/images/translate-learn-after.png)
+
+This demonstrates the convenience of this system property. All we had to do was visit a form, and ServiceNow did the hard work for us in creating a record on the Translated Name / Field table with the Language and Value fields populated, leaving us to focus on updating the Label (translate) field to actually translate the text.
 
 ## Resources
 
