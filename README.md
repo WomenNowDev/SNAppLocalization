@@ -12,19 +12,22 @@ The Phases of Localization in ServiceNow:
 4. After Go-Live - Test the Localization Implementation
 5. In the Future - Maintain the Localization Implementation
 
-[Check out the slides from our Knowledge 2022 session: Five things I wish I knew before attempting to localize my scoped application](/Five%20things%20I%20wish%20I%20knew%20before%20attempting%20to%20localize%20my%20scoped%20application.pptx) to learn more about these different phases!
+Here's the link to our Knowledge CreatorCon 2022 Session: **Five things I wish I knew before attempting to localize my scoped application** so you can learn more about these different phases! [[LINK]](https://knowledge.servicenow.com/newyork/sessiondetail?sessionId=1647877774150001sdwQ&sessionTimeId=1649454667893001f5Q0&state=k22newyork.sessiondetail&redirect_uri=https%3A%2F%2Fknowledge.servicenow.com%2Flibrary) 
+(You can also check out the slides here. [[LINK]](/Five%20things%20I%20wish%20I%20knew%20before%20attempting%20to%20localize%20my%20scoped%20application.pptx))
 
 ## Contents
 
 While the slides presented a high level overview of these different localization phases, the following contents are intended to go more in depth with additional explanations and examples.
 
-Find Missing Translations:
+### Find Missing Translations:
+
+Our tool: [Clear Skye I18N Scanner Utility](https://developer.servicenow.com/connect.do#!/share/contents/5449480_clear_skye_i18n_utility?v=1.0&t=PRODUCT_DETAILS) - We are using this to help us dig up all those pesky strings in our scripts, but we made it after we recorded our session so we didn't get to talk about it. Oh well - now we have a topic for next year! 
 
 - [Debug Translations](/Debug%20Translations.md) - learn how to find missing translations.
 - [FetchCode](/FetchCode.md) - learn how to use the FetchCode tool to search for hard-coded strings.
 - [Locate translatable strings](/Locate%20translatable%20strings.md) - learn how to create stub translation records needed for custom translations.
 
-Establish Design and Development Standards:
+### Establish Design and Development Standards:
 
 - [Design and Development Standards](/Design%20and%20Development%20Standards.md) - follow these best practices to make it easier to localize custom strings.
 - [Custom Translations](/Custom%20Translations.md) - learn how to translate custom strings.
